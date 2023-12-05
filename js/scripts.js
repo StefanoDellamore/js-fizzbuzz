@@ -1,25 +1,21 @@
 // ciclo for
 
-for (let contatore = 0;
-    contatore <= 100;
-    contatore ++   
-) {
-    console.log (contatore)
-    const resto = contatore % 3;
-    const restoDue = contatore % 5;
+for (let i = 1;
+    i <= 100;
+    i ++ ){
 
-    if (resto == 0) {
-        console.log (contatore,'fiz')
+    if ((i % 3 == 0) && (i % 5 == 0)){
+        console.log ('fizz' + 'buzz')
     }
-
-    if (restoDue == 0) {
-        console.log (contatore,'buz')
+    else if (i % 3 == 0){
+        console.log ('fizz')
     }
-
-    if (resto, restoDue == 0) {
-        console.log (contatore, 'fizbuz')
+    else if (i % 5 == 0){
+        console.log ('buzz')
     }
-    
+    else {
+        console.log (i);
+    }
 }
 
 
